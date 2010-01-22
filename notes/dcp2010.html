@@ -39,6 +39,9 @@ During 2010, DCP developers did the following:
   <li>Investigated data licensing and privacy issues.</li>
 
   <li>Investigated database issues.</li>
+
+  <li>Contributed some fixes for software used in the course of their
+  work back to their creators: specifically Gnumeric and Sqlite.</li>.
   
 </ul>
 
@@ -196,21 +199,25 @@ data used in ways they haven't expressly allowed.
 </p>
 
 
-<h2>Community contributions</h2>
+<h2>Contributed fixes</h2>
 
 <h3>Gnumeric</h3>
+
 <p>
-Improvement made to Gnumeric, a free and open spreadsheet program
-that is an alternative to Excel.
+
+Gnumeric is a free and open spreadsheet program that is an alternative
+to Excel.  In the course of evaluating Gnumeric for its utility in
+importing and exporting user data in bulk from spreadsheets, a DCP
+developer improved the codebase.  The improvement was submitted
+&ldquo;upstream&rdquo; to the Gnumeric team on May 6, 2009, and was
+accepted in modified form.
+
 </p>
 
-<pre>
-  Patch submitted May 6, 2009
-  Purpose: to simplify the automation of merging several spreadsheet 
-  pages into a single workbook.
-  https://bugzilla.gnome.org/show_bug.cgi?id=581616
-  http://projects.gnome.org/gnumeric/announcements/1.9/gnumeric-1.9.8.shtml
-</pre>
+<blockquote>
+  <a href='https://bugzilla.gnome.org/show_bug.cgi?id=581616'>https://bugzilla.gnome.org/show_bug.cgi?id=581616</a><br />
+  <a href='http://projects.gnome.org/gnumeric/announcements/1.9/gnumeric-1.9.8.shtml'>http://projects.gnome.org/gnumeric/announcements/1.9/gnumeric-1.9.8.shtml</a>
+</blockquote>
 
 <p>
   Gnumeric is licensed under the GNU General Public License (GPLv2),
@@ -222,24 +229,28 @@ that is an alternative to Excel.
 <h3>Sqlite</h3>
 
 <p>
-Improvement made to Sqlite, a public domain database that is probably
+Sqlite is a public domain database that is probably
 the most widely deployed SQL database engine in the world (it is 
 embedded in firefox, skype, and many cellphones, for example).
+In the course of evaluating Sqlite for its utility in
+importing and exporting user data in bulk from databases, a DCP
+developer fixed a flaw in round-tripping strings containing
+numbers with leading zeros (for example, certain zip codes).  
+The improvement was submitted
+&ldquo;upstream&rdquo; to the Sqlite team on June 11, 2009, and was
+accepted in modified form.
 </p>
 
-<pre>
-  Patch submitted June 11, 2009.
-  Purpose: to fix a flaw in round-tripping strings containing
-  numbers with leading zeros (for example, certain zip codes).
-  http://www.sqlite.org/cvstrac/tktview?tn=3906
-  http://www.sqlite.org/src/info/7b61b6c6ce
-</pre>
+<blockquote>
+  <a href='http://www.sqlite.org/cvstrac/tktview?tn=3906'>http://www.sqlite.org/cvstrac/tktview?tn=3906</a><br />
+  <a href='http://www.sqlite.org/src/info/7b61b6c6ce'>http://www.sqlite.org/src/info/7b61b6c6ce</a>
+</blockquote>
 
 <p>
   The Sqlite codebase has been dedicated to the public domain by all
   its contributors, and so can be used without a license.  Rather
   subversively, in the place where source code would usually 
-  contain licensing information, the Sqlite authers instead 
+  contain licensing information, the Sqlite authors instead 
   have the following blessing:
 </p>
 
@@ -251,14 +262,13 @@ embedded in firefox, skype, and many cellphones, for example).
 
 <h3>Advocacy</h3>
 
-<li>
+<p>
 
 The DCP acted as a voice for the free and open source approach,
 convincing at least one peer project to switch from
 mandating a closed technologyto requiring an open one.
 
-</li>
-
+</p>
 
 
 </body>
