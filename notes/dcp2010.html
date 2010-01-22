@@ -1,0 +1,267 @@
+<html>
+
+<body>
+
+<h1>The Data Commons Project</h1>
+<h2>2009</h2>
+
+<h2>Summary</h2>
+
+<p>
+
+During 2010, the Data Commons Project under the auspices of the
+Cooperative Development Institute was supported by a grant of $3500 from
+Equal Exchange, and donations from the public.
+
+</p>
+
+<p>
+The goal of the Data Commons Project is to develop and maintain an
+accurate, comprehensive, public database of cooperative economic
+initiatives.  We believe this could help achieve the vision of Equal
+Exchange's worker-owners of &ldquo;A vibrant mutually cooperative community
+of two million committed participants trading fairly one billion
+dollars a year in a way that transforms the world.&rdquo;
+</p>
+
+<p>
+
+During 2010, DCP developers did the following:
+
+</p>
+
+<ul>
+
+  <li>Released all DCP software public and under an OSI-approved license.</li>
+  
+  <li>Collaborated in a code sprint to improve an online directory.</li>
+
+  <li>Investigated data licensing and privacy issues.</li>
+
+  <li>Investigated database issues.</li>
+  
+</ul>
+
+<p>
+
+Our policy was for all development to be done by committed members of
+the DCP, without outsourcing.  Developers were free to invoice at a
+fixed rate, and were encouraged to exercise their discretion about
+whether they needed to invoice in order to justify getting DCP work
+onto their calendar.
+
+</p>
+
+
+<h2>Free and open software</h2>
+
+<p>
+
+For the DCP to succeed, we will need a lot of partners to trust us and
+collaborate with us.  As one step towards earning that trust, we have
+decided to make our software and our software development process
+public.
+
+</p>
+
+<p>
+
+On May 4, 2009, DCP software development was migrated to a public
+site:
+
+</p>
+
+<blockquote>
+<a href="http://launchpad.net/datacommons">http://launchpad.net/datacommons</a>
+</blockquote>
+
+<p>
+
+This site was key to the operation of a code sprint in October
+2009.  All DCP code is released under an OSI-approved license,
+making it free and open source.
+
+</p>
+
+
+<h2>Online directory</h2>
+
+<p> The DCP has for several years maintained a public index of
+cooperative-spirited organizations at find.coop.  A partial rewrite of
+this site was developed at a code sprint held in Brattleboro in March
+2007, but was never completed.  During 2009
+the &ldquo;source code&rdquo; for this site was publically released on
+launchpad, a well-respected site for software collaboration.  This
+code was further improved during a code sprint in October 2009.  A
+live test site (with minimal data) can be seen at: <p>
+
+<blockquote>
+     <a href="http://proto.find.coop">http://proto.find.coop</a>
+</blockquote>
+
+<p>
+The new code is much sounder and easier to maintain.  It also
+offers some new features:
+</p>
+
+<h3>Neighborhood mapping</h3>
+
+This was a popular feature on find.coop: the ability to visualize
+cooperative organizations that neighbor each other.  This was 
+ported to proto.find.coop and improved to be more maintainable 
+and scalable.
+
+<h3>Cooperative-minded mapping</h3>
+
+<p>
+find.coop currently shows maps of organization locations using the
+Google Maps viewer and data.  The Google Maps service is of excellent
+quality, but we realized that the proprietary nature of the viewer and
+data was distasteful to some of the community we wished to serve.
+</p>
+
+<p>
+Therefore for proto.find.coop, we have instead used free and open
+alternatives to the Google Maps viewer and data -- "openlayers" and
+"openstreetmap" respectively.  We make it easy for users to switch
+to Google Maps if that is their preference, but we don't make that
+choice for them.
+</p>
+
+<h3>Machine tagging</h3>
+
+<p>
+An experimental branch has implemented custom fields for organizations
+in a systematic way using a method called "machine tags" or "triple
+tag".  This is intended to allow fields defined by different
+authorities that might not quite coincide to coexist in the directory
+(although a long term goal of the project would be reconciliation).
+There is no consensus among DCP members about whether this approach is
+the right one is not, and so it is maintained separately.
+</p>
+
+<h3>Bulk download</h3>
+
+<p>
+In proto.find.coop, it is much easier to download the results of a
+search as a spreadsheet.  Both search results and individual listings
+are available for download in structured formats (currently CSV and
+XML).
+</p>
+
+<h2>Data licensing and privacy</h2>
+
+<p>
+
+Just like the DCP software is free and open, we would like to make
+databases of cooperative initiatives free and open.  As for software,
+it is possible to make creative use of existing laws to preserve
+the freedom of data.
+
+</p>
+
+<p>
+
+The first ever open data license was released in 2008 by a project run
+by the Open Knowledge Foundation (called, coincidentally,
+the "Open Data Commons").  During 2009, they released an Open Database
+License that is close to what the DCP needs:
+
+</p>
+
+<blockquote>
+<a href="http://www.opendatacommons.org/licenses/odbl/summary/">http://www.opendatacommons.org/licenses/odbl/summary/</a>
+</blockquote>
+
+<p>
+
+Further drafting efforts are in the works.  Given the limiting funding
+of the DCP, we are happy to see a complementary project dealing with
+the legal issues involved in licensing data correctly.
+
+</p>
+
+
+<p>
+
+Privacy is another matter.  We are learning that many groups
+are initially enthusiastic about making their data open, but
+then balk as the implications sink in.  One common problem is
+that for any data related to people, organizations quite
+rightly want to protect their members from having their
+data used in ways they haven't expressly allowed.
+
+<b>Postfix experiment</b>.
+
+</p>
+
+
+<h2>Community contributions</h2>
+
+<h3>Gnumeric</h3>
+<p>
+Improvement made to Gnumeric, a free and open spreadsheet program
+that is an alternative to Excel.
+</p>
+
+<pre>
+  Patch submitted May 6, 2009
+  Purpose: to simplify the automation of merging several spreadsheet 
+  pages into a single workbook.
+  https://bugzilla.gnome.org/show_bug.cgi?id=581616
+  http://projects.gnome.org/gnumeric/announcements/1.9/gnumeric-1.9.8.shtml
+</pre>
+
+<p>
+  Gnumeric is licensed under the GNU General Public License (GPLv2),
+  one of the first licenses to use copyright law creatively in order
+  to preserve the freedom of users rather than to limit them (an
+  approach now called "copyleft").
+</p>
+
+<h3>Sqlite</h3>
+
+<p>
+Improvement made to Sqlite, a public domain database that is probably
+the most widely deployed SQL database engine in the world (it is 
+embedded in firefox, skype, and many cellphones, for example).
+</p>
+
+<pre>
+  Patch submitted June 11, 2009.
+  Purpose: to fix a flaw in round-tripping strings containing
+  numbers with leading zeros (for example, certain zip codes).
+  http://www.sqlite.org/cvstrac/tktview?tn=3906
+  http://www.sqlite.org/src/info/7b61b6c6ce
+</pre>
+
+<p>
+  The Sqlite codebase has been dedicated to the public domain by all
+  its contributors, and so can be used without a license.  Rather
+  subversively, in the place where source code would usually 
+  contain licensing information, the Sqlite authers instead 
+  have the following blessing:
+</p>
+
+<pre>
+    May you do good and not evil
+    May you find forgiveness for yourself and forgive others
+    May you share freely, never taking more than you give.
+</pre>
+
+<h3>Advocacy</h3>
+
+<li>
+
+The DCP acted as a voice for the free and open source approach,
+convincing at least one peer project to switch from
+mandating a closed technologyto requiring an open one.
+
+</li>
+
+
+
+</body>
+</html>
+
+
